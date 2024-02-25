@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        😍🤩😴miri&shulamit:WANTED game
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="allDiv"></div>
+    <div id="center"></div>
+    <div id="homeButtons">
+        <button id="begin" class="starters" onclick="openMenu()">start</button>
+        <button id="instructions" onclick="openInstruction()" class="starters">how to play</button>
+    </div>
+
+    <div id="menu">
+        <button class="xButton" onclick="closeMenu()">&times;</button>
+
+
+        <br />
+        <button class="startGame" onclick="StartTimer()" value="1">level 1</button>
+        <br />
+        <button class="startGame" onclick="StartTimer()" value="2">level 2</button>
+        <br />
+
+        <button class="startGame" onclick="StartTimer()" value="3">level 3</button>
+    </div>
+
+    <div id="instructionPicture">
+        <button class="xButton" onclick="closeInstructions()">&times;</button>
+
+    </div>
+
+
+
+    <div id="game">
+        <div id="score">score:0 </div>
+        <div class="timer" style="--duration: 10;--size: 100;">
+            <div class="mask"></div>
+        </div>
+
+        <div id="timer"></div>
+        <div id="wanted"></div>
+        <div id="confusers"></div>
+        <div id="levels">
+            <p id="lev1">level 1</p>
+            <p id="lev2">level 2</p>
+            <p id="lev3">level 3</p>
+        </div>
+        <button id="backhome" onclick="backHome()">home</button>
+    </div>
+    <div id="gameOver">
+        <button id="back" onclick="backHome()">new game</button>
+        <div id="userScore2"></div>
+    </div>
+
+    <div id="succesLevel" class="succes">
+        <p></p>
+        <button id="nextLevel" class="buttonSUcces">next level</button>
+    </div>
+    <div id="succesAll" class="succes">
+        <p id="userScore"></p>
+        <button id="rePlay" class="buttonSUcces">&#xf015</button>
+    </div>
+
+
+
+    <audio controls="controls" id="succesSound">
+        <source src="audio/succes.mp3" type="audio/mpeg" />
+    </audio>
+
+
+    <audio controls="controls" id="failedSound">
+        <source src="audio/failed.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio controls="controls" id="backMusic">
+        <source src="audio/good_music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio controls="controls" id="end">
+        <source src="audio/end.mp3" type="audio/mpeg" />
+    </audio>
+
+
+    <audio controls="controls" id="succesLevel1">
+        <source src="audio/level%20end.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="GAMEt.js"></script>
+
+
+</body>
+</html>
